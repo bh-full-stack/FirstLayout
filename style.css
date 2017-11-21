@@ -84,13 +84,16 @@ section {
 }
 
 .gallery {
-    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -10px;
 }
-.gallery:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
+
+.gallery img {
+    margin: 10px;
 }
+
 
 iframe {
     width: 100%;
