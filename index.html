@@ -2,26 +2,38 @@
 <html>
 <head>
     <title>First Layout</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<nav>
-    <img src="http://stylers.hu/addons/shared_addons/themes/stylers/img/logo_frontend.png" alt="logo">
-    <ul>
-        <li>First</li>
-        <li>Second</li>
-        <li>Third</li>
-    </ul>
-    <div class="clearfix"></div>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="http://stylers.hu/addons/shared_addons/themes/stylers/img/logo_frontend.png" alt="logo">
+    </a>
+
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">First</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Second</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Third</a>
+            </li>
+        </ul>
+
 </nav>
 
 
-<article>
+<article class="text-justify">
     <div class="headline">
         <h1>Story headline</h1>
         <img src="http://hdwpro.com/wp-content/uploads/2016/02/Nature-Widescreen-Wallpaper.jpeg">
     </div>
-    <section>
+
+    <section class="container">
         <h2>Asoijdsf jaloso</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu congue velit. Morbi ligula justo, congue
@@ -36,7 +48,7 @@
     </section>
     <img class="to-right"
          src="https://camo.mybb.com/e01de90be6012adc1b1701dba899491a9348ae79/687474703a2f2f7777772e6a71756572797363726970742e6e65742f696d616765732f53696d706c6573742d526573706f6e736976652d6a51756572792d496d6167652d4c69676874626f782d506c7567696e2d73696d706c652d6c69676874626f782e6a7067">
-    <section>
+    <section class="container">
         <h3>Asoijdsf jaloso</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu congue velit. Morbi ligula justo, congue
@@ -49,7 +61,7 @@
             imperdiet justo, ac fermentum sapien. Integer a urna dolor.
         </p>
     </section>
-    <section>
+    <section class="container">
         <h3>Asoijdsf jaloso</h3>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu congue velit. Morbi ligula justo, congue
@@ -62,7 +74,7 @@
             imperdiet justo, ac fermentum sapien. Integer a urna dolor.
         </p>
     </section>
-    <section>
+    <section class="container">
         <h2>Asoijdsf jaloso</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu congue velit. Morbi ligula justo, congue
@@ -75,14 +87,14 @@
             imperdiet justo, ac fermentum sapien. Integer a urna dolor.
         </p>
     </section>
-    <section>
-        <div class="gallery">
-            <img src="http://via.placeholder.com/180x180" alt="">
-            <img src="http://via.placeholder.com/180x180" alt="">
-            <img src="http://via.placeholder.com/180x180" alt="">
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-4"><img class="img-fluid" src="http://via.placeholder.com/600x600" alt=""></div>
+            <div class="col-sm-4"><img class="img-fluid" src="http://via.placeholder.com/600x600" alt=""></div>
+            <div class="col-sm-4"><img class="img-fluid" src="http://via.placeholder.com/600x600" alt=""></div>
         </div>
     </section>
-    <section>
+    <section class="container">
         <iframe src="https://www.youtube.com/embed/Eawu67joQnE" frameborder="0" allowfullscreen></iframe>
     </section>
 
