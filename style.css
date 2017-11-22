@@ -4,31 +4,34 @@ body {
 
 h2 {
     color: #2cacc1;
+    font-size: 48px;
 }
 
 h3 {
-    color: #78788c;
+    color: #2cacc1;
+    font-size: 36px;
 }
 
 nav {
     background-color: #46465a !important;
 }
-nav a {
-    color: #ffffff;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: #e6e8f2;
-}
 
 .navbar-nav {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.navbar-nav .nav-link {
-    padding-right: .5rem;
-    padding-left: .5rem;
+.nav-item .nav-link {
+    background-color: #78788d;
+    margin-left: 3px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 10px;
+    color: #fff;
+}
+.nav-item .nav-link:hover {
+    background-color: #e2e2e7;
+    color: #78788c;
 }
 
 .headline {
@@ -49,12 +52,19 @@ nav a:hover {
     margin: 0;
     text-align: center;
     width: 100%;
+    font-size: 64px;
+    font-weight: bold;
 }
 
 section {
+    position: relative;
     margin-top: 40px;
 }
 
+section .anchor {
+    position: absolute;
+    top: -66px;
+}
 
 .to-right {
     float: right;
