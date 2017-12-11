@@ -3,3 +3,4 @@ node_modules/
 .sass-cache/
 style.css
 style.css.map
+tests/output/
