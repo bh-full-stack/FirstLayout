@@ -2,11 +2,11 @@ version: '3'
 services:
   firstlayout:
     build:
-      context: "./images/firstlayout"
+      context: "."
       args:
         - APP_HOST=${APP_HOST}
         - APP_OUTER_PORT=${APP_OUTER_PORT}
     volumes:
-      - "../firstlayout:/var/www/html"
+      - "../src:/var/www/html"
     ports:
       - "${APP_OUTER_PORT}:80"

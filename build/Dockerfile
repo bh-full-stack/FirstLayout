@@ -13,13 +13,13 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 
 RUN apt-get update -y && apt-get install -y yarn
 
-ADD entrypoint.sh /usr/local/bin/entrypoint.sh
+ADD ./resources/entrypoint.sh /usr/local/bin/entrypoint.sh
 
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 WORKDIR /var/www/html
 
-ADD ./etc /etc
+ADD ./resources/etc /etc
 
 RUN ln -s /etc/nginx/sites-available/firstlayout /etc/nginx/sites-enabled/firstlayout
 
